@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "629010782964",
+    "firebase_url": "https://fitnessfinal-ccc90.firebaseio.com",
+    "project_id": "fitnessfinal-ccc90",
+    "storage_bucket": "fitnessfinal-ccc90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629010782964:android:9519e5a3e7136b63",
+        "android_client_info": {
+          "package_name": "com.example.zhangzeyao.fitness_final4039"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629010782964-hs4rdprsfk50d25tfap5sq8i10n58lum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB79zKbSqP6iZoGd8MKaCi0NSOLaj-PS8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

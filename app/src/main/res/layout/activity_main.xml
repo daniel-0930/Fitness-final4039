@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhangzeyao.fitness_final4039.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
+    <ViewSwitcher
+        android:id="@+id/loginviewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_alignLeft="@+id/loginButton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/loginButton"
+                android:layout_marginBottom="63dp"
+                android:text="Sign Up" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="63dp"
+                android:text="Login" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/loginButton2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/forgetPassLink"
+                android:layout_alignLeft="@+id/skipCheckBox"
+                android:layout_alignStart="@+id/skipCheckBox" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="35dp"
+                android:text=" Email:"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Password: "
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_below="@+id/textView2"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:id="@+id/forgetPassLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget Password? Click here."
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_below="@+id/skipCheckBox"
+                android:layout_alignLeft="@+id/loginButton2"
+                android:layout_alignStart="@+id/loginButton2"
+                android:layout_marginTop="11dp" />
+
+            <EditText
+                android:id="@+id/passwordBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignLeft="@+id/emailBox"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/emailBox"
+                android:layout_toEndOf="@+id/textView3"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text=""
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/emailBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text=""
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/loginButton2"
+                android:layout_alignBottom="@+id/loginButton2"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@+id/loginButton2"
+                android:layout_toRightOf="@+id/loginButton2"
+                android:text="CANCEL" />
+
+            <CheckBox
+                android:id="@+id/skipCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="13dp"
+                android:text="Remember the user.   " />
+
+        </RelativeLayout>
+
+    </ViewSwitcher>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhangzeyao.fitness_final4039.AddFoodDinner"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <SearchView
+            android:id="@+id/searchFoodViewL"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/numberSelectedL"
+            android:layout_width="19dp"
+            android:layout_height="33dp" />
+
+        <Button
+            android:id="@+id/finishButtonL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:text="Done" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/allButtonL"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:text="All" />
+
+        <Button
+            android:id="@+id/meatButtonL"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:text="Meat" />
+
+        <Button
+            android:id="@+id/vegetableButtonL"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.08"
+            android:background="@android:color/background_light"
+            android:text="Vegetable" />
+
+        <Button
+            android:id="@+id/fruitButtonL"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:text="Fruit" />
+
+        <Button
+            android:id="@+id/otherButtonL"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:text="Other" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/foodListViewL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
